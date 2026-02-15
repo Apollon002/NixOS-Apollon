@@ -1,0 +1,16 @@
+{ ... }:
+{
+  flake.modules.homeManager.mango = { lib, ... }:
+  {
+    wayland.windowManager.mango.settings = ''
+      shadows=0
+      layer_shadows=0
+      shadow_only_floating=1
+      shadows_size=10
+      shadows_blur=15
+      shadows_position_x=0
+      shadows_position_y=0
+      shadowscolor=0x000000ff      
+    '';  
+  }; 
+}

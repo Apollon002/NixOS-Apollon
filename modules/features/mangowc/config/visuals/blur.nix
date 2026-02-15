@@ -1,0 +1,17 @@
+{ ... }:
+{
+  flake.modules.homeManager.mango = { lib, ... }:
+  {
+    wayland.windowManager.mango.settings = ''
+      blur=1
+      blur_layer=1
+      blur_optimized=1
+      blur_params_radius=5
+      blur_params_num_passes=2
+      blur_params_noise=0.02
+      blur_params_brightness=0.9
+      blur_params_contrast=0.9
+      blur_params_saturation=1.2
+    '';  
+  }; 
+}
