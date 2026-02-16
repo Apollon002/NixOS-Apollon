@@ -1,5 +1,3 @@
-# TODO FIND A BETTER SOLUTION FOR DEFAULT BROWSER
-
 { ... }:
 {
   flake.modules.homeManager.mango = { config, lib, ... }:
@@ -54,6 +52,11 @@
       # Presets
       bind=SUPER,R,switch_proportion_preset
       bind=SUPER,L,switch_layout
+
+      # Fullscreen / maximize
+      bind=SUPER,F,togglemaximizescreen
+      bind=SUPER+SHIFT,F,togglefullscreen
+      bind=SUPER+ALT,F,togglefakefullscreen
 
       # Audio
       bind=NONE,XF86AudioRaiseVolume,spawn,wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0

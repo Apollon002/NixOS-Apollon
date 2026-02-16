@@ -1,7 +1,10 @@
 {
   flake.modules = {
     nixos.core = { ... }: {
-      programs.git.enable = true;
+      programs.git = {
+        enable = true;
+        config.core.editor = "vim";
+      };
     };
 
     homeManager.git = { config, ... }: 
