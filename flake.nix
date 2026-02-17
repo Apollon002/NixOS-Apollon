@@ -22,6 +22,7 @@
     };
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs-lib.follows = "nixpkgs";
+    nvf.url = "github:notashelf/nvf";
     systems.url = "github:nix-systems/default-linux";
     zen-browser = {
       inputs.nixpkgs.follows = "nixpkgs";

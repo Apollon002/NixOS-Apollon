@@ -7,6 +7,8 @@
       allow_tearing=0
       allow_lock_transparent=1
       allow_shortcuts_inhibit=1
+      syncobj_enable=0
+      adaptive_sync=0
 
       focus_on_activate=1
       sloppyfocus=0
