@@ -1,6 +1,7 @@
 { config, ... }:
 let
   modules = with config.flake.modules.homeManager; [
+    apolloNvim
     bitwarden
     core
     desktop
@@ -12,9 +13,11 @@ let
     mango
     zen-browser
   ];
-in 
+in
 {
-  flake.modules.homeManager."jannik@silvermoon" = { ... }: {
-    imports = modules;
-  };
+  flake.modules.homeManager."jannik@silvermoon" =
+    { ... }:
+    {
+      imports = modules;
+    };
 }

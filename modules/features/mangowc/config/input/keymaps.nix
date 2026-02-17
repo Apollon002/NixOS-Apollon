@@ -31,10 +31,10 @@
       bind=SUPER,right,focusdir,right
 
       # Monitor focus
-      bind=CTRL,up,focusmon,up
-      bind=CTRL,left,focusmon,left
-      bind=CTRL,down,focusmon,down
-      bind=CTRL,right,focusmon,right
+      bind=ALT,up,focusmon,up
+      bind=ALT,left,focusmon,left
+      bind=ALT,down,focusmon,down
+      bind=ALT,right,focusmon,right
 
       # Workspace navigation
       axisbind=SUPER,UP,viewtoleft
