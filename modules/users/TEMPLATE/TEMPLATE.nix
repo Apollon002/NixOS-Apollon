@@ -8,10 +8,10 @@ in
 {
   flake.modules = lib.mkMerge [
     (self.factory.user {
-      username = username;
-      isAdmin = isAdmin;
-      gitName = gitName;
-      gitMail = gitMail;
+      inherit username;
+      inherit isAdmin;
+      inherit gitName;
+      inherit gitMail;
     })
 
     {

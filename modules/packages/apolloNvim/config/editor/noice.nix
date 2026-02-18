@@ -1,6 +1,5 @@
-{ ... }:
 {
-  flake.modules.packages.apolloNvim = { ... }: {
+  flake.modules.packages.apolloNvim = {
     vim.ui.noice.enable = true;
   };
 }

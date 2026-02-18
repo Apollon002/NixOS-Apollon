@@ -1,4 +1,4 @@
-{ config, lib, self, ... }:
+{ config, lib, ... }:
 let
   username = "jannik";
   isAdmin = true;
@@ -8,10 +8,10 @@ in
 {
   flake.modules = lib.mkMerge [
     (config.flake.factory.user {
-      username = username;
-      isAdmin = isAdmin;
-      gitName = gitName;
-      gitMail = gitMail; 
+      inherit username;
+      inherit isAdmin;
+      inherit gitName;
+      inherit gitMail;
     })
   ];
 }

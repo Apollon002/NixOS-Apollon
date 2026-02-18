@@ -1,6 +1,5 @@
-{ ... }:
 {
-  flake.modules.packages.apolloNvim = { ... }: {
+  flake.modules.packages.apolloNvim = {
     vim.fzf-lua = {
       enable = true;
       profile = "telescope";

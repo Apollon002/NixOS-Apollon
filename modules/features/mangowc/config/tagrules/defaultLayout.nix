@@ -1,7 +1,5 @@
-{ ... }:
 {
-  flake.modules.homeManager.mango = { ... }:
-  {
+  flake.modules.homeManager.mango = {
     wayland.windowManager.mango.settings = ''
       tagrule=id:1,layout_name:scroller
       tagrule=id:2,layout_name:scroller
@@ -12,6 +10,6 @@
       tagrule=id:7,layout_name:scroller
       tagrule=id:8,layout_name:scroller
       tagrule=id:9,layout_name:scroller
-    '';  
-  }; 
+    '';
+  };
 }

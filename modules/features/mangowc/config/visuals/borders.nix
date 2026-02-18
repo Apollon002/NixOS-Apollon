@@ -1,7 +1,5 @@
-{ ... }:
 {
-  flake.modules.homeManager.mango = { ... }:
-  {
+  flake.modules.homeManager.mango = {
     wayland.windowManager.mango.settings = ''
       borderpx=3
       gappih=16
@@ -14,5 +12,5 @@
       unfocused_opacity = 1.0
       no_radius_when_single=0
     '';
-  }; 
+  };
 }

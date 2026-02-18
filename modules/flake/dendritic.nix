@@ -1,4 +1,4 @@
-# Include flake-file, flake-parts, import-tree and set outputs to include all modules 
+# Include flake-file, flake-parts, import-tree and set outputs to include all modules
 # in ./modules relative to flake.nix.
 # Generates the starting point of this config
 { inputs, lib, ... }:

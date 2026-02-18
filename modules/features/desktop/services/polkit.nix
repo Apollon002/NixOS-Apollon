@@ -1,12 +1,11 @@
-{ ... }:
 {
   flake.modules = {
 
-    nixos.desktop = { ... }: {
+    nixos.desktop = {
       security.polkit.enable = true;
     };
 
-    homeManager.desktop = { ... }: {
+    homeManager.desktop = {
       services.polkit-gnome.enable = true;
     };
   };

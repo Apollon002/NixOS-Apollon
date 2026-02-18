@@ -1,7 +1,6 @@
-{ ... }:
 {
   flake.modules = {
-    nixos.fish = { ... }: {
+    nixos.fish = {
       programs.fish = {
         enable = true;
         interactiveShellInit = ''
@@ -12,15 +11,17 @@
       documentation.man.generateCaches = false;
     };
 
-    homeManager.fish = { config, lib, ... }: {
-      programs.fish = {
-        enable = true;
-        shellInit = ''
-        '' 
-        + (lib.optionalString (config.home.username == "jannik") ''
-          export SSH_AUTH_SOCK=/home/jannik/.bitwarden-ssh-agent.sock
-        ''); 
+    homeManager.fish =
+      { config, lib, ... }:
+      {
+        programs.fish = {
+          enable = true;
+          shellInit =
+            ""
+            + (lib.optionalString (config.home.username == "jannik") ''
+              export SSH_AUTH_SOCK=/home/jannik/.bitwarden-ssh-agent.sock
+            '');
+        };
       };
-    };
   };
 }

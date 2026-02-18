@@ -1,11 +1,12 @@
-{ ... }:
 {
-  flake.modules.packages.apolloNvim = { ... }: {
+  flake.modules.packages.apolloNvim = {
     vim.tabline.nvimBufferline = {
       enable = true;
-      mappings.closeCurrent = "<C-q>";
-      mappings.cycleNext = "<C-right>";
-      mappings.cyclePrevious = "<C-left>";
+      mappings = {
+        closeCurrent = "<C-q>";
+        cycleNext = "<C-right>";
+        cyclePrevious = "<C-left>";
+      };
     };
   };
 }

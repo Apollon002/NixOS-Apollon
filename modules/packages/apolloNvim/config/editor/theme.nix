@@ -1,6 +1,5 @@
-{ ... }:
 {
-  flake.modules.packages.apolloNvim = { ... }: {
+  flake.modules.packages.apolloNvim = {
     vim.theme = {
       enable = true;
       name = "tokyonight";

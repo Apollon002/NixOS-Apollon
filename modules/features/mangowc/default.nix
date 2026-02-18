@@ -1,4 +1,3 @@
-{ inputs, ... }:
 {
   flake-file.inputs = {
     mango = {
@@ -8,15 +7,19 @@
   };
 
   flake.modules = {
-    nixos.mango = { inputs, ... }: {
-      imports = [ inputs.mango.nixosModules.mango ];
+    nixos.mango =
+      { inputs, ... }:
+      {
+        imports = [ inputs.mango.nixosModules.mango ];
 
-      programs.mango.enable = true;
-    };
+        programs.mango.enable = true;
+      };
 
-    homeManager.mango = { inputs, ... }: {
-      imports = [ inputs.mango.hmModules.mango ];
-      wayland.windowManager.mango.enable = true;
-    };
+    homeManager.mango =
+      { inputs, ... }:
+      {
+        imports = [ inputs.mango.hmModules.mango ];
+        wayland.windowManager.mango.enable = true;
+      };
   };
 }

@@ -1,10 +1,9 @@
-{ ... }:
 {
-  flake.modules.packages.apolloNvim = { ... }: {
+  flake.modules.packages.apolloNvim = {
     vim = {
       utility.oil-nvim = {
         enable = true;
-        gitStatus.enable = true; 
+        gitStatus.enable = true;
       };
 
       keymaps = [

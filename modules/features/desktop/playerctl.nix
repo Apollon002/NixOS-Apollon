@@ -1,6 +1,7 @@
-{ ... }:
 {
-  flake.modules.homeManager.desktop = { pkgs, ... }: {
-    home.packages = with pkgs; [ playerctl ];
-  };
+  flake.modules.homeManager.desktop =
+    { pkgs, ... }:
+    {
+      home.packages = with pkgs; [ playerctl ];
+    };
 }

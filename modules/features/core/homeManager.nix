@@ -5,18 +5,20 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  flake.modules.nixos.core = { inputs, ... }: {
-    imports = [
-      inputs.home-manager.nixosModules.home-manager
-    ];
+  flake.modules.nixos.core =
+    { inputs, ... }:
+    {
+      imports = [
+        inputs.home-manager.nixosModules.home-manager
+      ];
 
-    home-manager = {
-      useGlobalPkgs = true;
-      useUserPackages = true;
+      home-manager = {
+        useGlobalPkgs = true;
+        useUserPackages = true;
 
-      backupFileExtension = "backup";
+        backupFileExtension = "backup";
 
-      extraSpecialArgs = { inherit inputs; };
+        extraSpecialArgs = { inherit inputs; };
+      };
     };
-  };
 }
