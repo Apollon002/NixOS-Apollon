@@ -2,11 +2,11 @@
 let
   modules = with config.flake.modules.nixos; [
     bluetooth
+    dankGreet
     desktop
     fish
     fonts
     grub
-    ly
     mango
     networkManager
     nvidia
