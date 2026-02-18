@@ -30,20 +30,6 @@
         ];
       };
 
-      boot = {
-        kernelParams = [
-          "quiet"
-          "splash"
-          "vga=current"
-          "rd.systemd.show_status=false"
-          "rd.udev.log_level=3"
-          "udev.log_priority=3"
-        ];
-        initrd.systemd.enable = true;
-        initrd.verbose = false;
-        plymouth.enable = true;
-      };
-
       programs.nano.enable = lib.mkForce false;
 
       console = {
