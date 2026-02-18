@@ -9,6 +9,11 @@
         tree
         tldr
         sl
+        zip
+        unzip
+        nh
+        nix-output-monitor
+        nvd
       ];
     };
 }
