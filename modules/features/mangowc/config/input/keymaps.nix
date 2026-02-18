@@ -76,6 +76,11 @@
       ''
       + lib.optionalString (Browser != "") ''
         bind=SUPER,B,spawn,${Browser}
+      ''
+      + lib.optionalString config.programs.dank-material-shell.enable ''
+        bind=SUPER,Space,spawn,dms ipc call spotlight toggle
+        bind=SUPER,L,spawn,dms ipc call lock lock
+        bind=SUPER,P,spawn,dms ipc call powermenu toggle
       '';
     };
 }

@@ -124,7 +124,7 @@
           workspaceFollowFocus = false;
           showOccupiedWorkspacesOnly = false;
           reverseScrolling = false;
-          dwlShowAllTags = false;
+          dwlShowAllTags = true;
           workspaceColorMode = "default";
           workspaceOccupiedColorMode = "none";
           workspaceUnfocusedColorMode = "default";
@@ -407,7 +407,7 @@
               spacing = 0;
               innerPadding = 3;
               bottomGap = 0;
-              transparency = 1;
+              transparency = 0;
               widgetTransparency = 1;
               squareCorners = true;
               noBackground = true;
