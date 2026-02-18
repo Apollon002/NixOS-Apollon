@@ -5,6 +5,7 @@ let
     bitwarden
     core
     desktop
+    dms
     fish
     fonts
     git
