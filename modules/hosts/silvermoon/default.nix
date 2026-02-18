@@ -1,6 +1,7 @@
 { config, ... }:
 let
   modules = with config.flake.modules.nixos; [
+    bluetooth
     desktop
     fish
     fonts
