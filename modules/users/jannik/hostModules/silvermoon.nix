@@ -1,22 +1,28 @@
 { config, ... }:
 let
   modules = with config.flake.modules.homeManager; [
+    amberol
     apolloNvim
     bitwarden
     core
     desktop
     dms
     documentIO
+    evince
     fish
     fonts
     git
+    gthumb
     jannik
     kitty
     mango
     megacmd
+    microfetch
     nemo
     office
+    thunderbird
     typst
+    vesktop
     zen-browser
   ];
 in
