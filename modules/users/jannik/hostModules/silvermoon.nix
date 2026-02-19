@@ -21,6 +21,7 @@ let
     nemo
     office
     pearDesktop
+    starship
     thunderbird
     typst
     vesktop
