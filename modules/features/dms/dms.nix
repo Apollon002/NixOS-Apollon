@@ -35,8 +35,8 @@
           matugenScheme = "scheme-fidelity";
           runUserMatugenTemplates = true;
           matugenTargetMonitor = "";
-          popupTransparency = 1;
-          dockTransparency = 1;
+          popupTransparency = 0.6;
+          dockTransparency = 0.01;
           widgetBackgroundColor = "sch";
           widgetColorMode = "default";
           cornerRadius = 12;
@@ -420,9 +420,9 @@
               innerPadding = 3;
               bottomGap = 0;
               transparency = 0;
-              widgetTransparency = 1;
-              squareCorners = true;
-              noBackground = true;
+              widgetTransparency = 0.01;
+              squareCorners = false;
+              noBackground = false;
               gothCornersEnabled = true;
               gothCornerRadiusOverride = false;
               gothCornerRadiusValue = 12;
