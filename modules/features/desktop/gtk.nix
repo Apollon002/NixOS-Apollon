@@ -14,6 +14,15 @@
           nwg-look
         ];
 
+        qt = {
+          enable = true;
+          platformTheme.name = "gtk3";
+          style = {
+            name = "adwaita";
+            package = pkgs.adwaita-qt; # falls du explizit ein Paket setzen willst
+          };
+        };
+
         gtk = {
           enable = true;
 
