@@ -4,7 +4,7 @@
     inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  flake.modules.homeManager.zen-browser =
+  flake.modules.homeManager.zenBrowser =
     {
       inputs,
       config,

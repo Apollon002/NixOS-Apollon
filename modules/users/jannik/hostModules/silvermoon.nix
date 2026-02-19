@@ -20,10 +20,11 @@ let
     microfetch
     nemo
     office
+    pearDesktop
     thunderbird
     typst
     vesktop
-    zen-browser
+    zenBrowser
   ];
 in
 {
