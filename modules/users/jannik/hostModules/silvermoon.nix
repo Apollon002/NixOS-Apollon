@@ -10,6 +10,7 @@ let
     fish
     fonts
     git
+    icons
     jannik
     kitty
     mango
