@@ -8,6 +8,7 @@ let
     documentIO
     fish
     fonts
+    gaming
     grub
     mango
     networkManager
