@@ -13,6 +13,7 @@ let
     jannik
     kitty
     mango
+    typst
     zen-browser
   ];
 in
