@@ -27,6 +27,7 @@
     nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs-lib.follows = "nixpkgs";
+    nixpkgs-megacmd.url = "github:lunik1/nixpkgs/megacmd-bin";
     nvf.url = "github:notashelf/nvf";
     systems.url = "github:nix-systems/default-linux";
     zen-browser = {

@@ -13,6 +13,7 @@ let
     jannik
     kitty
     mango
+    megacmd
     nemo
     office
     typst
