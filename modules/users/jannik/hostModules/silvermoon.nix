@@ -6,13 +6,13 @@ let
     core
     desktop
     dms
+    documentIO
     fish
     fonts
     git
     jannik
     kitty
     mango
-    documentIO
     zen-browser
   ];
 in
