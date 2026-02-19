@@ -22,6 +22,7 @@ let
     office
     pearDesktop
     pywalfox
+    showtime
     starship
     thunderbird
     typst
