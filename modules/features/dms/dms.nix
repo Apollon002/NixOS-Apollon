@@ -532,6 +532,8 @@
         export PROFILE_DIR=$(find ~/.config/zen -maxdepth 1 -type d -name "*.Default Profile" | head -n 1)
         mkdir -p "$PROFILE_DIR/chrome"
         ln -sf ~/.config/DankMaterialShell/zen.css "$PROFILE_DIR/chrome/userChrome.css"
+        mkdir -p ~/.cache/wal
+        ln -sfn ~/.cache/wal/dank-pywalfox.json ~/.cache/wal/colors.json 2>/dev/null
       '';
     };
 }

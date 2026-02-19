@@ -21,6 +21,7 @@ let
     nemo
     office
     pearDesktop
+    pywalfox
     starship
     thunderbird
     typst
