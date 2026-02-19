@@ -11,6 +11,17 @@
     {
       imports = [ inputs.dms.homeModules.dank-material-shell ];
 
+      xdg.configFile = {
+        # matugen config.toml file that reads and places templates
+        "matugen/config.toml".text = ''
+          [config]
+
+          [templates.starship]
+          input_path = '~/.config/matugen/templates/starship-colors.toml'
+          output_path = '~/.config/starship.toml'
+        '';
+      };
+
       programs.dank-material-shell = {
         enable = true;
 
