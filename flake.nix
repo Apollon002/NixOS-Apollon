@@ -24,6 +24,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       url = "github:DreamMaoMao/mango";
     };
+    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs-lib.follows = "nixpkgs";
     nvf.url = "github:notashelf/nvf";
