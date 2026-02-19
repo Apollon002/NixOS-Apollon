@@ -6,6 +6,7 @@ let
     dankGreet
     desktop
     documentIO
+    flatpak
     fish
     fonts
     gaming
