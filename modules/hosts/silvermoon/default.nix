@@ -4,6 +4,7 @@ let
     bluetooth
     dankGreet
     desktop
+    documentIO
     fish
     fonts
     grub

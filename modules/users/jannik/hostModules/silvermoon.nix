@@ -12,6 +12,7 @@ let
     jannik
     kitty
     mango
+    documentIO
     zen-browser
   ];
 in
