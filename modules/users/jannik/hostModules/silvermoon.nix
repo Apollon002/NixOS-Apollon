@@ -14,6 +14,7 @@ let
     kitty
     mango
     nemo
+    office
     typst
     zen-browser
   ];
