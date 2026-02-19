@@ -526,5 +526,12 @@
           configVersion = 5;
         };
       };
+
+      home.activation.mkEmptyFiles = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+        set -u
+        export PROFILE_DIR=$(find ~/.config/zen -maxdepth 1 -type d -name "*.Default Profile" | head -n 1)
+        mkdir -p "$PROFILE_DIR/chrome"
+        ln -sf ~/.config/DankMaterialShell/zen.css "$PROFILE_DIR/chrome/userChrome.css"
+      '';
     };
 }

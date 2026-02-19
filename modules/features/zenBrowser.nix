@@ -43,6 +43,14 @@
               SearchEngines = {
                 Default = "DuckDuckGo";
               };
+
+              Preferences = {
+                "toolkit.legacyUserProfileCustomizations.stylesheets" = {
+                  Value = true;
+                  Status = "user";
+                  Type = "boolean";
+                };
+              };
             };
           }
         )
