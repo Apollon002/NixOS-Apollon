@@ -20,6 +20,11 @@
           default = "";
           description = "Default Browser for user";
         };
+        defaultFileBrowser = lib.mkOption {
+          type = lib.types.nullOr lib.types.str;
+          default = "";
+          description = "Default File-Browser for user";
+        };
       };
     };
 }

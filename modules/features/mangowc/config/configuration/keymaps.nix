@@ -3,6 +3,7 @@
     { config, lib, ... }:
     let
       Browser = config.userSettings.defaultBrowser;
+      fileBrowser = config.userSettings.defaultFileBrowser;
     in
     {
       wayland.windowManager.mango.settings = ''
@@ -76,6 +77,9 @@
       ''
       + lib.optionalString (Browser != "") ''
         bind=SUPER,B,spawn,${Browser}
+      ''
+      + lib.optionalString (fileBrowser != "") ''
+        bind=SUPER,E,spawn,${fileBrowser}
       ''
       + lib.optionalString config.programs.dank-material-shell.enable ''
         bind=SUPER,Space,spawn,dms ipc call spotlight toggle
