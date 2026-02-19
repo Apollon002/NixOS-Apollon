@@ -6,5 +6,7 @@
         enable = true;
         profiles = { };
       };
+
+      userSettings.defaultMailClient = "thunderbird";
     };
 }

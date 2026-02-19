@@ -9,6 +9,7 @@ let
     dms
     documentIO
     evince
+    fileRoller
     fish
     fonts
     git

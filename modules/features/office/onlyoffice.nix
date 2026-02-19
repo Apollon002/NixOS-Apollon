@@ -23,5 +23,7 @@
         chmod 755 "$fonts_dir" || true
         chmod 644 "$fonts_dir"/* 2>/dev/null || true
       '';
+
+      userSettings.defaultOffice = "onlyoffice-desktopeditors";
     };
 }
