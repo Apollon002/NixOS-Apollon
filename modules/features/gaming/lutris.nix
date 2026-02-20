@@ -9,7 +9,7 @@
           extraLibraries = pkgs: [ ];
 
           # List of additional system packages
-          extraPkgs = pkgs: [ ];
+          extraPkgs = pkgs: [ proton-ge-bin ];
         })
       ];
     };
