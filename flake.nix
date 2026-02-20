@@ -6,6 +6,10 @@
   outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./modules);
 
   inputs = {
+    disko = {
+      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/disko/latest";
+    };
     dms = {
       inputs.nixpkgs.follows = "nixpkgs";
       url = "github:AvengeMedia/DankMaterialShell/stable";
