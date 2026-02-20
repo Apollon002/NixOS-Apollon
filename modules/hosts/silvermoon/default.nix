@@ -5,6 +5,7 @@ let
     cachyKernel
     dankGreet
     desktop
+    disko
     documentIO
     fish
     fonts
